@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+runtimes/default=erlang
+runtimes/erlang/args=
+runtimes/erlang/codePath=
+runtimes/erlang/homeDir=/usr/local/lib/erlang
+runtimes/erlide=erlang

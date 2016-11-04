@@ -1,0 +1,101 @@
+!SESSION 2016-07-13 19:51:03.287 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/admin/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -data /Users/admin/Google-Drive/SINF21MS/Septembre/LINGI2241 - APCS/GroupWorks/1 -product org.eclipse.epp.package.java.product -keyring /Users/admin/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2016-07-13 19:51:04.606
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.erlide.core 1 0 2016-07-13 19:51:15.221
+!MESSAGE Erlide log is in /Users/admin/Google-Drive/SINF21MS/Septembre/LINGI2241 - APCS/GroupWorks/1/erlide.log
+
+!ENTRY org.erlide.core 1 0 2016-07-13 19:51:15.257
+!MESSAGE *** starting Erlide v0.33.0.201605251547 (core=0.32.2.201605251547) (model api=0.32.1.201605251547) *** (UTF-8) ui
+
+!ENTRY org.eclipse.ui 4 0 2016-07-13 21:11:01.060
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOfRange(Arrays.java:3658)
+	at java.lang.StringBuffer.toString(StringBuffer.java:671)
+	at org.eclipse.swt.custom.StyledText.getModelDelimitedText(StyledText.java:1961)
+	at org.eclipse.swt.custom.StyledText.paste(StyledText.java:7363)
+	at org.eclipse.jface.text.TextViewer.paste(TextViewer.java:4100)
+	at org.eclipse.jface.text.TextViewer.doOperation(TextViewer.java:4029)
+	at org.eclipse.jface.text.source.SourceViewer.doOperation(SourceViewer.java:1053)
+	at org.eclipse.ui.console.actions.TextViewerAction.run(TextViewerAction.java:70)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor56.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:252)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:234)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:493)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:486)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1105)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4225)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1491)
+!SESSION 2016-07-24 20:38:05.592 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/admin/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/admin/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2016-07-24 20:38:07.099
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.erlide.core 1 0 2016-07-24 20:38:20.022
+!MESSAGE Erlide log is in /Users/admin/Google-Drive/SINF21MS/Septembre/LINGI2241 - APCS/GroupWorks/1/erlide.log
+
+!ENTRY org.erlide.core 1 0 2016-07-24 20:38:20.127
+!MESSAGE *** starting Erlide v0.33.0.201605251547 (core=0.32.2.201605251547) (model api=0.32.1.201605251547) *** (UTF-8) ui
+!SESSION 2016-08-15 01:33:46.395 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/admin/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -data /Users/admin/Google-Drive/SINF21MS/Septembre/LINGI2241 - APCS/GroupWorks/1 -product org.eclipse.epp.package.java.product -keyring /Users/admin/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2016-08-15 01:33:49.118
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.erlide.core 1 0 2016-08-15 01:34:11.234
+!MESSAGE Erlide log is in /Users/admin/Google-Drive/SINF21MS/Septembre/LINGI2241 - APCS/GroupWorks/1/erlide.log
+
+!ENTRY org.erlide.core 1 0 2016-08-15 01:34:11.311
+!MESSAGE *** starting Erlide v0.33.0.201605251547 (core=0.32.2.201605251547) (model api=0.32.1.201605251547) *** (UTF-8) ui
+!SESSION 2016-08-16 03:11:22.475 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/admin/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -data /Users/admin/Google-Drive/SINF21MS/Septembre/LINGI2241 - APCS/GroupWorks/1 -product org.eclipse.epp.package.java.product -keyring /Users/admin/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2016-08-16 03:11:23.973
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.erlide.core 1 0 2016-08-16 03:11:38.099
+!MESSAGE Erlide log is in /Users/admin/Google-Drive/SINF21MS/Septembre/LINGI2241 - APCS/GroupWorks/1/erlide.log
+
+!ENTRY org.erlide.core 1 0 2016-08-16 03:11:38.176
+!MESSAGE *** starting Erlide v0.33.0.201605251547 (core=0.32.2.201605251547) (model api=0.32.1.201605251547) *** (UTF-8) ui

@@ -1,0 +1,80 @@
+package main;
+
+import java.io.FileNotFoundException;
+import java.text.DecimalFormat;
+
+import utils.TraceParser;
+import cache.LFUCache;
+import cache.LRUCache;
+import models.Request;
+
+public class Task1_1 {
+	//number of the request for the warmup
+	private static int warmup;
+	//size of the cache
+	private static int size;
+	//object TraceParser 
+	private static TraceParser traceParser = null;
+
+	public static void main(String[] args) throws FileNotFoundException {	
+		//get the number of the request for the warmup
+		warmup = Integer.parseInt(args[0]);
+		//get the size of the cache
+		size = Integer.parseInt(args[1]);
+		//parse the trace file
+		traceParser = new TraceParser(System.in);
+
+		computeHitRate();
+
+	}
+
+	/*
+	 * this method compute the hit rate of each cache strategy : LFU & LRU
+	 */
+	public static void computeHitRate() {
+		//initialization of the LRU cache
+		LRUCache LRUCache = new LRUCache(size);
+		//initialization of the LFU cache
+		LFUCache LFUCache = new LFUCache(size);
+
+		//warmup the cache
+		for (int i = 0 ; i < warmup ; i++) {
+			Request requestObject = traceParser.getRequest();
+			if (requestObject == null) break;
+			LRUCache.get(requestObject);
+			LFUCache.get(requestObject);
+		}
+
+		Request requestObject = null;
+
+		int requestNumb = 0, hitsLRU = 0, hitsLFU = 0;
+
+		while((requestObject = traceParser.getRequest()) != null) {
+			if (LRUCache.get(requestObject)) {
+				hitsLRU++;
+			}
+			if (LFUCache.get(requestObject)) {
+				hitsLFU++;
+			}
+			requestNumb++;
+		}
+
+		//compute the hitrate
+		double hitrateLRU = (double)hitsLRU / (double)requestNumb;
+		double hitrateLFU = (double)hitsLFU / (double)requestNumb;
+
+		System.out.println("");
+		System.out.println("LRU Hit rate : " + roundDouble(hitrateLRU));
+		System.out.println("LFU Hit rate: " + roundDouble(hitrateLFU));
+		System.out.println("");
+
+		//write the content of the cache in a file
+		traceParser.print("cache_lru.txt", LRUCache.printCache());
+		traceParser.print("cache_lfu.txt", LFUCache.printCache());
+	}
+
+	public static String roundDouble(double d){
+		DecimalFormat formatter = new DecimalFormat("0.00%");
+		return formatter.format(d);
+	}
+}

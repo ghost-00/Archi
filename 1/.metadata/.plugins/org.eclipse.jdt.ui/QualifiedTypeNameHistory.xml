@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.text.DecimalFormat"/>
+<fullyQualifiedTypeName name="cache.LRUCache"/>
+<fullyQualifiedTypeName name="utils.RequestedObject"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="models.Node"/>
+<fullyQualifiedTypeName name="models.RequestObject"/>
+<fullyQualifiedTypeName name="cache.LFUCache"/>
+<fullyQualifiedTypeName name="utils.TraceParser"/>
+<fullyQualifiedTypeName name="models.Request"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+</qualifiedTypeNameHistroy>
